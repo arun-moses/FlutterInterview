@@ -89,12 +89,12 @@ class _GoogleSignAppState extends State<GoogleSignApp> {
             Container(
               width: MediaQuery.of(context).size.width,
               height:  MediaQuery.of(context).size.height,
-              child: Image.network(
+              /*child: Image.network(
                   'https://images.unsplash.com/photo-1518050947974-4be8c7469f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'
                   ,fit: BoxFit.fill,
                   color: Color.fromRGBO(255, 255, 255, 0.6),
                   colorBlendMode: BlendMode.modulate
-              ),
+              ),*/
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -102,20 +102,21 @@ class _GoogleSignAppState extends State<GoogleSignApp> {
                 SizedBox(height:10.0),
                 Container(
                     width: 250.0,
+                    height: 100,
                     child: Align(
                       alignment: Alignment.center,
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(30.0)),
-                        color: Color(0xffffffff),
+                        color: Colors.blue,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            Icon(FontAwesomeIcons.google,color: Color(0xffCE107C),),
+                            Icon(FontAwesomeIcons.google,color: Color(0xffffffff),),
                             SizedBox(width:10.0),
                             Text(
                               'Sign in with Google',
-                              style: TextStyle(color: Colors.black,fontSize: 18.0),
+                              style: TextStyle(color: Colors.white,fontSize: 18.0),
                             ),
                           ],),
                        /* onPressed: () => _signIn(context)
@@ -138,15 +139,15 @@ class _GoogleSignAppState extends State<GoogleSignApp> {
                       child: RaisedButton(
                         shape: RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(30.0)),
-                        color: Color(0xffffffff),
+                        color: Colors.green,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: <Widget>[
-                            Icon(FontAwesomeIcons.phone,color: Color(0xff4754de),),
+                            Icon(FontAwesomeIcons.phone,color: Color(0xffffffff),),
                             SizedBox(width:10.0),
                             Text(
                               'Login with Phone',
-                              style: TextStyle(color: Colors.black,fontSize: 18.0),
+                              style: TextStyle(color: Colors.white,fontSize: 18.0),
                             ),
                           ],),
                         onPressed: () {
@@ -158,7 +159,7 @@ class _GoogleSignAppState extends State<GoogleSignApp> {
                       ),
                     )
                 ),
-                Container(
+                /*Container(
                     width: 250.0,
                     child: Align(
                       alignment: Alignment.center,
@@ -181,14 +182,14 @@ class _GoogleSignAppState extends State<GoogleSignApp> {
                             context,
                             MaterialPageRoute(builder: (context) => MyAppTabBar()),
                           );
-                          /*Navigator.push(
+                          *//*Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => MyAppList()),
-                          );*/
+                          );*//*
                         },
                       ),
                     )
-                ),
+                ),*/
               ],
             ),
           ],
