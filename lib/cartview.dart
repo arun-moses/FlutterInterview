@@ -117,19 +117,19 @@ class TrailList extends StatelessWidget {
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
                                             Container(
-                                              width: 150,
+                                              width: 100,
                                               child: Wrap(
                                                 children: [
                                                   Text(trails[index].dish_name,
                                                       style: TextStyle(
                                                         fontWeight: FontWeight.w500,
-                                                        fontSize: 20,
+                                                        fontSize: 15,
                                                       )),
                                                 ],
                                               ),
                                             ),
                                             Container(
-                                              width: 100,
+                                              width: 80,
                                               decoration: BoxDecoration(color: Colors.green,
                                                 border: Border.all(color: Colors.white),
                                                 borderRadius: BorderRadius.all(
@@ -169,7 +169,7 @@ class TrailList extends StatelessWidget {
                                             Text(trails[index].dish_price,
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.w500,
-                                                  fontSize: 20,
+                                                  fontSize: 15,
                                                 )),
                                           ],
                                         ),
@@ -191,8 +191,8 @@ class TrailList extends StatelessWidget {
                                           children: [
                                             Text("INR "+trails[index].dish_price,
                                                 style: TextStyle(
-                                                  fontWeight: FontWeight.w500,
-                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.normal,
+                                                  fontSize: 15,
                                                 )),
 
 
@@ -204,8 +204,8 @@ class TrailList extends StatelessWidget {
                                           alignment: Alignment.topLeft,
                                           child: Text(trails[index].dish_calories+" calories",
                                               style: TextStyle(
-                                                fontWeight: FontWeight.w500,
-                                                fontSize: 20,
+                                                fontWeight: FontWeight.normal,
+                                                fontSize: 15,
                                               )),
                                         ),
 

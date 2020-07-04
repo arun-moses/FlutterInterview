@@ -192,7 +192,7 @@ class _MyHomePageState extends State<MyHomePageTabBar> {
                           },
                           child: Container(
                             padding: EdgeInsets.all(15),
-                            height: 220,
+                            height: 250,
                             child: Stack(
                               children: [
                                 Column(
